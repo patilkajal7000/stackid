@@ -1,0 +1,18 @@
+.custom-toast {
+    @include border-radius(16px);
+    min-height: 40px;
+    .toast-header {
+        color: $white;
+        border: 0px;
+        height: 100%;
+        &.success {
+            background-color: $success;
+        }
+        &.warning {
+            background-color: $warning;
+        }
+        &.danger {
+            background-color: $danger;
+        }
+    }
+}

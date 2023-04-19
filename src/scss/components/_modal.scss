@@ -1,0 +1,27 @@
+.custom-modal {
+    &.modal-content {
+        @include border-radius(50px);
+        padding: 25px;
+        .header-icon {
+            top: 0;
+            right: 0;
+            color: $primary;
+        }
+
+        &.square-corner {
+            @include border-radius(8px);
+        }
+    }
+}
+.header-icon {
+    top: 5px;
+    right: 10px;
+    color: $primary;
+}
+.modal-content {
+    border-radius: 30px;
+    padding: 10px;
+}
+.custom-modal .custom-input-box-label {
+    min-width: 35% !important;
+}

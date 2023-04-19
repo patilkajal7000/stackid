@@ -1,0 +1,35 @@
+.border-left-0 {
+    border-left: 10px solid #c34a5d;
+}
+.border-left-critical {
+    border-left: 10px solid #c34a5d;
+}
+.border-left-1 {
+    border-left: 10px solid #ff9251;
+}
+.border-left-2 {
+    border-left: 10px solid #f2be42;
+}
+.border-left-3 {
+    border-left: 10px solid #089b71;
+}
+.border-left-9 {
+    background-color: 'red';
+    width: 800px;
+    min-height: '297mm';
+    margin: 0%;
+}
+
+.b-left {
+    background-color: 'red';
+    width: 570px;
+    min-height: '297mm';
+    margin: 0%;
+}
+.pdfContainer {
+    background-color: 'red';
+    width: '100mm';
+    min-height: '297mm';
+    margin-left: 'auto';
+    margin-right: 'auto';
+}

@@ -1,0 +1,10 @@
+node_modules
+src/serviceWorker.js
+build
+.evn
+node_modules/
+build/
+dist/
+.prettierrc.js
+.eslintrc.js
+env.d.ts

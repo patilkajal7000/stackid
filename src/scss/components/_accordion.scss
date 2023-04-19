@@ -1,0 +1,24 @@
+.custom-accordion {
+    .accordion-header {
+        width: 100%;
+        border: none;
+        background-color: rgba($color: $primary-200, $alpha: 0.8);
+        color: $neutral-500;
+        padding: 1rem 2rem;
+        outline: none;
+
+        :focus {
+            outline: none;
+        }
+
+        .toggle-icon {
+            background: $white;
+            border: 2px solid $neutral-700;
+            box-sizing: border-box;
+            @include border-radius(28px);
+        }
+        button {
+            padding: 15px;
+        }
+    }
+}

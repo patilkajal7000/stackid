@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "jsx": "react-jsx",
+        "target": "ESNext",
+        "module": "ESNext",
+        "strict": true,
+        "noImplicitAny": true,
+        "esModuleInterop": false, // vite false check, cra was true
+        "skipLibCheck": true, // vite false check, cra was true
+        "forceConsistentCasingInFileNames": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": false, // vite false check, cra was true
+        "allowSyntheticDefaultImports": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "types": ["vite/client", "node", "google.accounts"]
+    },
+    "include": ["src", "@testing-library/jest-dom"],
+    "typeRoots": ["src/types/GlobalVariable.d.ts", "../node_modules/@types"]
+}

@@ -1,0 +1,20 @@
+.nav-custom {
+    &.nav-box {
+        .nav-link {
+            background: $white;
+            border: 1px solid $neutral-200;
+            box-sizing: border-box;
+            width: $nav-tab-width;
+            height: $nav-tab-height;
+            @include border-radius(4px);
+            cursor: pointer;
+            &.active {
+                background: $nav-active-bg;
+                border: 1px solid $primary-400;
+            }
+            &.w-2 {
+                width: 23vw;
+            }
+        }
+    }
+}

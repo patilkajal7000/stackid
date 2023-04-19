@@ -1,0 +1,45 @@
+.tabs-custom {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: white;
+    .tab-content {
+        background: transparent;
+        border: 0;
+    }
+
+    .nav-item {
+        .nav-link {
+            box-shadow: none;
+            border: none;
+            min-width: 142px;
+            // padding: 0.832rem 1rem;
+            color: $neutral-400;
+            text-align: center;
+            @extend .h5;
+            font-size: 16px;
+            margin-bottom: 0rem !important;
+            margin-top: 0.5rem;
+            &:hover {
+                color: $primary;
+            }
+            &.active {
+                @extend .h5;
+                background-color: $white;
+                border: 0;
+                color: $primary;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+.tabs-custom1 {
+    margin-top: 0px;
+    // margin-left: 50px;
+}
+.tabs-child {
+    // margin-left: 15px;
+}
+.header.border-0 .tabs-child:nth-child(1) {
+    padding-left: 50px;
+}

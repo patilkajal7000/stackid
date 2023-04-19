@@ -1,0 +1,168 @@
+.btn-custom {
+    text-align: center;
+    &.btn-primary {
+        background-color: $primary-400;
+        color: $white;
+        &:hover,
+        &.hover {
+            background-color: $primary-300;
+        }
+        &:active,
+        &.active,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active {
+            background-color: $primary-400;
+            color: $white;
+            &:focus,
+            &.focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        &:focus,
+        &.focus {
+            outline: 0;
+            box-shadow: none;
+            background: $primary-400
+                radial-gradient(
+                    circle,
+                    $btn-custom-primary-color-focus-radial-gradient 0%,
+                    $primary-400 25%,
+                    $primary-400 75%,
+                    $btn-custom-primary-color-focus-radial-gradient 100%
+                );
+        }
+        &:disabled {
+            background-color: $btn-disabled-color;
+            color: $white;
+            border: 0;
+            pointer-events: none;
+        }
+    }
+    &.btn-secondary {
+        border: 2px solid $primary-400;
+        background-color: $white;
+        color: $primary-400;
+        &:hover,
+        &.hover {
+            background-color: $secondary-200;
+            border-color: $primary-400;
+        }
+        &:active,
+        &.active,
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active {
+            background-color: $white;
+            border-color: $primary-400;
+            color: $primary-400;
+            &:focus,
+            &.focus {
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+        &:focus,
+        &.focus {
+            outline: 0;
+            box-shadow: none;
+            background: $primary-400
+                radial-gradient(circle, $btn-custom-secondary-color-focus-radial-gradient 35%, $white 36%, $white 75%);
+            &:hover {
+                border-color: $primary-400;
+            }
+        }
+        &:disabled {
+            background-color: $white;
+            border-color: $btn-disabled-color;
+            opacity: 0.3;
+            color: $btn-disabled-color;
+        }
+    }
+    &.btn-link {
+        color: $secondary !important;
+        @extend .font-small-semibold;
+    }
+    &.btn-pill {
+        @include border-radius(25px);
+    }
+    // &.btn-transparent {
+    //     border: 0;
+    //     background-color: transparent;
+    //     color: $btn-custom-transparent-color;
+    //     &:hover,
+    //     &.hover {
+    //         background-color: $btn-custom-transparent-bg-color-hover;
+    //     }
+    //     &:focus,
+    //     &.focus {
+    //         outline: 0;
+    //         box-shadow: none;
+    //         background-color: $btn-custom-transparent-bg-color-hover;
+    //     }
+    // }
+    &.btn-tab {
+        border: 2px solid $neutral-300;
+        color: #000;
+        @include border-radius(4px);
+        margin-left: -2px;
+        font-weight: 400;
+        &.selected {
+            background: $selection-card-bg;
+            border-color: $primary-400;
+            z-index: 9;
+        }
+    }
+
+    &.btn-filter {
+        background: $selection-card-bg;
+        color: $original-black;
+        @include border-radius(4px);
+        @extend .h5;
+        &:focus {
+            box-shadow: none !important;
+            border: 1px solid $primary;
+            box-sizing: border-box;
+        }
+        &.selected {
+            border: 1px solid $primary;
+        }
+    }
+    &.btn-search {
+        color: $primary;
+        height: 44px;
+        border: 0;
+        outline: 0;
+    }
+    &.btn-search:hover,
+    &.btn-search:active,
+    &.btn-search:focus,
+    &.btn-search:focus-visible {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+    }
+}
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-giant {
+    @extend .h3;
+    padding: 0.75rem 2.5rem;
+    @include border-radius(22px);
+}
+.btn-lg {
+    @extend .h4;
+    padding: 0.65rem 2.5rem;
+    @include border-radius(22px);
+}
+.btn-md {
+    @extend .h5;
+    padding: 0.35rem 2.5rem;
+    @include border-radius(22px);
+}
+.btn-sm {
+    @extend .font-small-semibold;
+    padding: 0.15rem 2.5rem;
+    @include border-radius(22px);
+}

@@ -1,0 +1,6 @@
+.custom-count-badge {
+    width: 197px;
+    background: $primary-200;
+    @include border-radius(8px);
+    @extend #{'.d-flex', '.flex-row', ' .h6 ', '.justify-content-between', '.px-3'};
+}

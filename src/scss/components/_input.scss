@@ -1,0 +1,131 @@
+.custom-input {
+    color: $black;
+
+    &.custom-input-box {
+        height: 36px;
+        // @include border-top-right-radius(16px);
+        // @include border-bottom-right-radius(16px);
+        border-top-right-radius: 16px !important;
+        border-bottom-right-radius: 16px !important;
+        border: 1px solid $neutral-300;
+        box-sizing: border-box;
+        &.form-control {
+            border-top-right-radius: 16px !important;
+            border-bottom-right-radius: 16px !important;
+        }
+        &.invalid-input {
+            border-color: $red;
+            border-left: 2px solid $neutral-300;
+            color: $red;
+            padding-right: 40px;
+            &.password {
+                padding-right: 100px;
+            }
+        }
+
+        &.dropdown {
+            width: 73.27%;
+            &.md-label {
+                width: 65% !important;
+            }
+        }
+    }
+
+    &.custom-input-auth {
+        @include border-radius(12px);
+        height: 46px;
+        color: $black;
+        // padding-left: 20px;
+        &.form-control {
+            border-top-right-radius: 12px !important;
+            border-bottom-right-radius: 12px !important;
+        }
+        &.invalid-input {
+            border-color: $red;
+            color: $red;
+            padding-right: 40px;
+            &.password,
+            &.input-search {
+                padding-right: 100px;
+            }
+        }
+        &.password {
+            padding-right: 60px;
+        }
+        &.input-search {
+            border-radius: var(--cui-border-radius) !important;
+        }
+    }
+    &.dropdown {
+        width: 73%;
+    }
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: 0;
+}
+
+.filter-dropdown {
+    height: 46px !important;
+}
+.dropdown-toggle:focus-within,
+.dropdown-toggle:hover {
+    background-color: transparent;
+}
+
+.dropdown-toggle-action {
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-toggle-action:hover,
+.dropdown-toggle-action:focus-within {
+    background-color: transparent;
+    border: none;
+    box-shadow: transparent;
+}
+
+.custom-input-box-label {
+    height: 36px;
+    color: $neutral-300;
+    // @include border-top-left-radius(16px);
+    // @include border-bottom-left-radius(16px);
+    border-top-left-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+    border: 1px solid $neutral-300;
+    padding-left: 15px;
+    background-color: transparent;
+
+    &.invalid-input-label {
+        border-color: $red;
+        color: $red;
+    }
+
+    &.md-label {
+        width: 20%;
+    }
+}
+
+.input-label-error {
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    padding: 2px;
+    overflow: inherit;
+    border-radius: 50%;
+}
+
+.input-error-icon {
+    position: absolute;
+    right: 10px;
+    z-index: 99;
+}
+.clear-effect {
+    background: transparent;
+    border: 0;
+}
+.map-path .form-check-input {
+    font-size: 17px;
+    cursor: pointer !important;
+}

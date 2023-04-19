@@ -1,0 +1,29 @@
+.insights-details {
+    background: #eaf3e0;
+    font-size: 12px;
+    font-weight: 500px !important;
+    cursor: pointer;
+}
+.state-circle {
+    border-radius: 50%;
+}
+.state-color {
+    background: #ef5350;
+}
+.badge-success {
+    background-color: #a5d6a7;
+}
+
+.insights-details-body {
+    background-color: #ecf3;
+    cursor: default;
+}
+
+.fix-button-width {
+    width: 50px;
+}
+
+.accordion-body-button {
+    @extend .fix-button-width;
+    background-color: #77e1a0;
+}

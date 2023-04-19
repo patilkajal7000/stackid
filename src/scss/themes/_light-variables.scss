@@ -1,0 +1,139 @@
+/******* Theme Colors *******/
+//override coreUi Theme Colors
+
+$cui-sidebar-nav-group-bg: #089a8d;
+
+$red: #bc3416;
+$black: #212b27;
+$white: #ffffff;
+
+$body-bg: #ffffff;
+
+$primary: #619ea5;
+$secondary: #62bce5;
+
+//override coreUi status Colors
+
+$success: #089b71;
+$info: #52a1c5;
+$warning: #d09c1e;
+$danger: #c34a5d !default;
+
+$danger-dark: #ff647c !default;
+$danger-50: #f7899a !default;
+$danger-25: #fddfe4 !default;
+
+// custom color variables
+$primary-100: #f2f9fa;
+$primary-200: #e6eff1;
+$primary-300: #74c4e8; // button hover
+$primary-400: #51b5e2; // button background color, border color for button and card
+$primary-500: #bfdddb;
+
+$secondary-100: #f0f6f9;
+$secondary-200: #eef8fd;
+$secondary-300: #f6feff;
+$secondary-400: #f6fbf9;
+$secondary-500: #ebebed;
+
+$success-100: #b4eede;
+$success-200: #82e2c7;
+$success-300: #00c48c;
+
+$warning-100: #f2bd3f;
+
+$info-100: #eff8fc;
+$info-200: #67cbf9;
+$danger-100: #fff0f2;
+
+$high: #ff9251;
+
+// Button specific color
+$btn-link-color: #57b4df;
+$btn-custom-primary-color-focus-radial-gradient: rgba(255, 255, 255, 0.2);
+$btn-custom-secondary-color-focus-radial-gradient: rgba(81, 181, 226, 0.1);
+$btn-disabled-color: #cfd6de; // button disabled color
+
+// card specific color
+$selection-card-bg: #eefaff; // used in selection card
+
+// nav active bg
+$nav-active-bg: #eefaff;
+
+// sevetity colors
+$severity-critical: $danger-dark;
+$severity-critical-bg: $danger-100;
+
+$severity-high: $high;
+$severity-high-bg: #fff6f1; // servirity card background
+
+$severity-medium: #f2be42;
+$severity-medium-bg: #fffbef;
+
+// Text, Background and Border Color
+$neutral: #32324e;
+$neutral-50: #212934; //custom - used in Link details
+$neutral-100: #f5f6f7;
+$neutral-200: #e5e5e5; // used in selection card
+$neutral-300: #cfd6de;
+$neutral-400: #8895a7;
+$neutral-500: #5f6b7a;
+$neutral-600: #43436c; // used in breadcrum
+$neutral-700: #e7f0f1;
+$neutral-800: #f7f8fc;
+$neutral-900: #52525b; // used in popover
+
+$percentage-text-color: #dd1d1d;
+
+// custom
+$original-black: #000000;
+$text-table: #52525b;
+$text-info-table: #32403b;
+
+// sub header
+$bg-sub-header: #f7feff;
+
+//custom shadow variables
+$shadow-1: 0px 4px 2px -2px rgba(27, 46, 94, 0.02);
+$shadow-2: 0px 4px 8px -2px rgba(27, 46, 94, 0.04);
+$shadow-3: 0px 2px 4px -2px rgba(27, 46, 94, 0.08);
+$shadow-4: 0px 4px 8px -6px rgba(27, 46, 94, 0.03), 0px 16px 8px -4px rgba(27, 46, 94, 0.03);
+$shadow-5: 0px 8px 24px -4px rgba(27, 46, 94, 0.08);
+$shadow-6: 0px 8px 24px -4px rgba(27, 46, 94, 0.12);
+$shadow-7: 0px 8px 40px -4px rgba(27, 46, 94, 0.08);
+$shadow-8: 2px 0px 8px rgba(27, 46, 94, 0.03), 12px 12px 8px rgba(27, 46, 94, 0.03);
+$inner-shadow: inset 0px 1px 2px rgba(27, 46, 94, 0.3);
+$shadow-9: 0px 8px 40px rgba(27, 46, 94, 0.08);
+
+// Added below shadow which is not in desing but have to customised for some functional adjustment
+// the in Identities overview screen
+$custom-shadow: 0px 11px 21px -4px rgba(27, 46, 94, 0.08);
+
+$shadow-color-blue: #4e73f8;
+
+$auth-color: #dae8ea;
+
+// custom menu variables
+$nav-border-color: $primary;
+$nav-text-color: $primary;
+$bg-toggle-icon: #e7f0f2;
+
+// custom risk card vairables
+$risk-border-color: #000000;
+$badge-text: $risk-border-color;
+
+// table column background - Identiies popover Risk map
+$bg-table-col: #e6faf4;
+
+$severity-low: $success-300;
+$severity-low-bg: $bg-table-col;
+
+// custom edge icon
+$bg-edge-icon: #62bce6;
+
+// custum icon-bg-circle
+$bg-icon-circle: #e7f0f2;
+$border-tooltip: #cfd6de;
+$grey: #99a09d;
+$gray: #ebebeb;
+$min-contrast-ratio: 2.5;

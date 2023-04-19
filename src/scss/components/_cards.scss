@@ -1,0 +1,256 @@
+.custom-card {
+    &.card {
+        color: $neutral;
+        &.selection-card {
+            max-width: 100px;
+            box-sizing: border-box;
+            background-color: $white;
+            border: 1px solid $neutral-200;
+            cursor: pointer;
+            @include border-radius(4px);
+            @extend .h6;
+            .card-body {
+                padding: 0.5rem;
+            }
+
+            &.selected {
+                border: 1px solid $primary-400;
+                background-color: $selection-card-bg;
+            }
+        }
+
+        //  short-details-card
+        &.short-details-card {
+            border: none;
+            width: 232px;
+            margin: 0.5rem 1rem;
+            @extend .font-small-semibold;
+            @extend .shadow-6;
+            .card-body-details {
+                display: flex;
+                padding: 1rem;
+                padding-right: 10px;
+                .card-icon {
+                    margin: 1rem 0.5rem 1rem 0.5rem;
+                }
+                .percentage-text {
+                    color: $percentage-text-color;
+                    opacity: 1;
+                }
+            }
+            &.risk-card {
+                width: auto !important;
+            }
+        }
+
+        &.long-details-card {
+            border: none;
+            width: 360px;
+            margin: 0.5rem 1rem;
+            @extend .font-medium;
+            @extend .shadow-6;
+            .card-body-details {
+                display: flex;
+                padding: 1rem;
+                .card-icon {
+                    margin: 1rem 0.5rem 1rem 0.5rem;
+                }
+                .card-sub-text {
+                    opacity: 0.8;
+                }
+            }
+            .card-title {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .card-footer {
+            border-color: rgba($neutral, 0.1);
+        }
+
+        &.auth-card {
+            @include border-radius(50px);
+            background-color: $secondary-400;
+            padding: 36px;
+            padding-left: 46px;
+            padding-right: 46px;
+        }
+        &.overlay-card {
+            position: absolute;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+        &.profile-card {
+            background-color: $secondary-100;
+            @include border-radius(20px);
+            .profile-image {
+                border: 2px solid $primary;
+                @include border-radius(50%);
+            }
+        }
+
+        &.risk-card {
+            box-sizing: border-box;
+            border: 1px solid rgba($risk-border-color, 0.05);
+            box-shadow: $shadow-8;
+            @include border-radius(8px);
+            .card-side {
+                // height: 27%;
+                // width: 4px;
+                // position: absolute;
+                // left: 0;
+                // top: 12%;
+                // border-top-right-radius: 20px;
+                // border-bottom-right-radius: 20px;
+                // overflow: hidden;
+                // background-color: $danger-dark;
+                height: 92%;
+                width: 10px;
+                position: absolute;
+                left: 0;
+                top: 4%;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                overflow: hidden;
+                // background-color: #ff647c;
+            }
+            .badge {
+                width: fit-content;
+                background: $danger-100;
+                color: $badge-text;
+            }
+            &.selected {
+                border: 2px solid $primary;
+                box-sizing: border-box;
+                box-shadow: $shadow-8;
+                border-radius: 8px;
+            }
+        }
+        &.table-card {
+            background: $white;
+            box-sizing: border-box;
+            box-shadow: $shadow-8;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            @include border-radius(8px);
+        }
+        .card-header {
+            background: $white;
+        }
+    }
+    &.severity-card {
+        border: none;
+        width: 171px;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 2rem 0.5rem 2rem;
+        margin: 0.5rem 1rem;
+        @include border-radius(8px);
+        @extend .h3;
+        .card-side {
+            height: 80%;
+            width: 5%;
+            position: absolute;
+            left: 0;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            overflow: hidden;
+        }
+        &.bpi-card {
+            padding: 0.8rem 0rem 0.5rem 0rem;
+            width: 128px;
+            .card-bottom {
+                background-color: $white;
+            }
+        }
+    }
+    &.status-indicator-card {
+        border: none;
+        width: 144px;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 2rem 0.5rem 1.5rem;
+        margin: 0.5rem 1rem;
+        @include border-radius(8px);
+        @extend .font-small-semibold;
+        .severity-text {
+            margin-right: 1rem;
+        }
+        .card-side {
+            height: 52.1%;
+            width: 4.866%;
+            position: absolute;
+            left: 0;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            overflow: hidden;
+        }
+    }
+
+    &.status-indicator-chip {
+        border: none;
+        justify-content: center;
+        padding: 0.5rem 2rem 0.5rem 0.5rem;
+        margin: 0.5rem 1rem;
+        @include border-radius(10px);
+        @extend .font-small-semibold;
+        .severity-icon {
+            margin-right: 1rem;
+        }
+    }
+    &.Critical {
+        background-color: $severity-critical-bg;
+        .severity-text,
+        .severity-icon {
+            color: $severity-critical;
+        }
+        .card-side {
+            background-color: $severity-critical;
+        }
+    }
+    &.High {
+        background-color: $severity-high-bg;
+        .severity-text,
+        .severity-icon {
+            color: $severity-high;
+        }
+        .card-side {
+            background-color: $severity-high;
+        }
+    }
+    &.Medium {
+        background-color: $severity-medium-bg;
+        .severity-text,
+        .severity-icon {
+            color: $severity-medium;
+        }
+        .card-side {
+            background-color: $severity-medium;
+        }
+    }
+    &.Low {
+        background-color: $severity-low-bg;
+        .severity-text,
+        .severity-icon {
+            color: $severity-low;
+        }
+        .card-side {
+            background-color: $severity-low;
+        }
+    }
+    // compliance card
+    &.compliance-card {
+        width: 145px;
+        background-color: $primary-100;
+        border: 1px solid rgba($primary, 0.5);
+        @include border-radius(10px);
+        @extend .font-small-semibold;
+        .compliance-text {
+            @extend .h6;
+        }
+    }
+}

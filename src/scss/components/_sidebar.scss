@@ -1,0 +1,50 @@
+.sidebar_custom {
+    &.c-sidebar {
+        position: fixed;
+        background-color: $sidebar-bg;
+        color: $sidebar-text;
+        max-width: $sidebar-width;
+        width: $sidebar-width;
+        right: 0;
+        bottom: 0;
+        top: $sidebar-top;
+        max-height: calc(100% - #{$sidebar-top});
+        transform: translate(100%, 0);
+        flex-direction: column;
+        z-index: auto !important;
+        box-shadow: $sidebar-shadow;
+    }
+}
+
+.btn-sidebar-toggle {
+    position: fixed;
+    right: 0;
+    top: $sidebar-top;
+    z-index: 1021 !important;
+    box-sizing: border-box;
+    width: $sidebar-btn-width;
+    height: $sidebar-btn-height;
+    background: $sidebar-btn-bg;
+    @include border-radius(15px 0px 0px 15px);
+    transition: right 0.3s ease-out;
+
+    .panel_open_rotated {
+        transform: rotate(180deg);
+    }
+
+    .panel_open_icon {
+        transform: rotate(180deg);
+    }
+}
+
+/* These classes should be at parent level of RHS panel */
+.sidebar-open-wrapper {
+    width: calc(100% - #{$sidebar-width});
+    transform: translate(0, 0);
+    transition: width 0.3s ease-out;
+}
+.sidebar-close-wrapper {
+    width: 100%;
+    transform: translate(0, 0);
+    transition: width 0.3s ease-out;
+}

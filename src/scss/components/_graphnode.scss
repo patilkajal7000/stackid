@@ -1,0 +1,169 @@
+// This is the class that automatically gets added by react flow to each node
+.react-flow__node {
+    .risk-highlight-circle {
+        background: radial-gradient(circle at top right, transparent 19px, #e2e2e6 20px);
+
+        :before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            top: -1px;
+            right: -1px;
+            transform: translate(50%, -50%);
+            width: 321px;
+            height: 321px;
+            border-radius: 50%;
+            background: $danger-100;
+        }
+    }
+
+    &.react-flow__node-default,
+    .selected {
+        background: transparent;
+        width: $graph-node-width;
+        border: 0 !important;
+        padding: 0;
+        box-shadow: none !important;
+        &:hover {
+            border: 0 !important;
+            box-shadow: none !important;
+        }
+    }
+    &.selected {
+        border: none !important;
+        .custom-node {
+            border: 2px solid $primary !important;
+        }
+    }
+    .react-flow__handle {
+        background: none !important;
+    }
+    .custom-node {
+        box-shadow: $shadow-9;
+
+        @include border-radius($grpah-node-radius);
+
+        .icon-section {
+            max-width: $graph-node-icon-section-max-width;
+            background: aliceblue;
+            @include border-radius($grpah-node-radius);
+
+            .node-icon {
+                width: $graph-node-icon-width;
+                height: $graph-node-icon-height;
+            }
+        }
+
+        .text-section {
+            text-align: left;
+            max-width: $graph-node-text-max-width;
+        }
+
+        .risk-icon {
+            svg {
+                padding: 0.02rem;
+            }
+        }
+        // .risk-icon :hover + .tooltip {
+        //     visibility: visible;
+        // }
+        .tooltip {
+            visibility: hidden; /* Or display: none, depending on how you want it to behave */
+        }
+    }
+    .secondary-section {
+        color: $secondary;
+        cursor: pointer;
+        font-weight: $font-weight-medium;
+        line-height: 16px;
+        margin-right: -0.75rem;
+        span {
+            background: transparent;
+        }
+    }
+}
+.react-flow__edge-path {
+    stroke: $info-200 !important;
+    stroke-width: $graph-link-stroke-width !important;
+}
+.react-flow__edge-path_normal {
+    stroke: $danger;
+    stroke-width: $graph-link-stroke-width !important;
+}
+.react-flow__edge-path1 {
+    stroke: $danger !important;
+    stroke-width: 4;
+}
+// .tooltip {
+//     visibility: hidden; /* Or display: none, depending on how you want it to behave */
+// }
+
+.tooltip-on-hover:hover + .tooltip {
+    /* Uses the adjacent sibling selector */
+    visibility: visible; /* Or display: block */
+}
+
+.risk-icon {
+    width: $risk-icon-width;
+    height: $risk-icon-height;
+    color: $white;
+    background: $danger-dark;
+    text-align: center;
+    cursor: pointer;
+    @include border-radius(50%);
+}
+
+.edge-icon {
+    position: absolute;
+    color: $bg-edge-icon;
+    background: $white;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.position-top-right {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+
+    &.risk-icon-long {
+        right: calc((#{$risk-icon-long-width} / 1.2) * -1);
+    }
+}
+.position-bottom-right {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-weight: bolder;
+    &.risk-icon-long {
+        right: calc((#{$risk-icon-long-width} / 1.2) * -1);
+    }
+}
+.risk-icon-long {
+    width: $risk-icon-long-width;
+    height: $risk-icon-long-height;
+    color: $white;
+    background: $danger-dark;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    @include border-radius($risk-icon-long-radius);
+    .risk-icon {
+        color: $danger-dark;
+        background: $white;
+        margin-left: 0.1rem;
+    }
+}
+.react-flow__controls {
+    position: fixed;
+    z-index: 5;
+    bottom: 41%;
+    left: 1%;
+    display: flex;
+}

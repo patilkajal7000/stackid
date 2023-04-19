@@ -1,0 +1,8 @@
+button {
+    &:disabled {
+        cursor: default;
+    }
+    &.disabled {
+        cursor: default;
+    }
+}

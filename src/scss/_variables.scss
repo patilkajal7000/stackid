@@ -1,0 +1,77 @@
+// Variable overrides
+/******* Fonts *******/
+//override coreUi base font
+$font-base-family: 'Poppins', sans-serif;
+
+//custom font variables
+$font-open-sans: 'Open Sans', sans-serif;
+
+// override coreui h1-h6 font size
+$h1-font-size: 32px;
+$h2-font-size: 24px;
+$h3-font-size: 20px;
+$h4-font-size: 18px;
+$h5-font-size: 16px;
+$h6-font-size: 12px;
+
+// custom line height
+$line-height-h1: 40px;
+$line-height-h2: 32px;
+$line-height-h3: $line-height-h2;
+$line-height-h4: 24px;
+$line-height-h5: $line-height-h4;
+$line-height-h6: $line-height-h4;
+
+// override coreui font size
+//$font-size-base: 14px;
+//$font-size-lg: 18px;
+//$font-size-sm: 10px;
+
+// custom font size
+$font-size-md: 16px;
+$font-size-xs: 12px;
+
+// override coreui breadcrum divider
+$breadcrumb-divider: quote('>');
+
+// override coreui header height
+$header-height: 72px;
+$font-weight-max: 700;
+$font-weight-medium: 600;
+$font-weight-low: 400;
+
+// custom sidebar
+$sidebar-bg: $white;
+$sidebar-text: $black;
+$sidebar-shadow: -6px 0px 20px 5px rgba(196, 196, 196, 0.2);
+$sidebar-width: 384px;
+$sidebar-top: 0px;
+
+// custom sidebar toggle button
+$sidebar-btn-width: 16px;
+$sidebar-btn-height: 56px;
+$sidebar-btn-bg: $primary;
+
+// custom nav tab
+$nav-tab-width: 221px;
+$nav-tab-height: 40px;
+
+// custom graph node and link
+$graph-node-width: 287px;
+$grpah-node-radius: 8px;
+$graph-node-icon-width: 43px;
+$graph-node-icon-height: $graph-node-icon-width;
+$graph-node-text-max-width: 200px;
+$graph-node-icon-section-max-width: 70px;
+$graph-link-stroke-width: 2;
+
+// custom graph risk icon
+$risk-icon-width: 30px;
+$risk-icon-height: $risk-icon-width;
+$risk-icon-long-width: 155px;
+$risk-icon-long-height: 32px;
+$risk-icon-long-radius: 22px;
+
+// custom edge icon
+$edge-icon-width: 20px;
+$edge-icon-height: $edge-icon-width;

@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"');
+
+// If you want to override variables do it here
+@import 'themes/light-variables';
+@import 'variables';
+
+// Import CoreUI styles
+@import '@coreui/coreui/scss/coreui';
+// @import '~bootstrap/scss/bootstrap';
+
+@import '@coreui/chartjs/dist/css/coreui-chartjs.min.css';
+// @import '@coreui/coreui/dist/css/coreui.min.css';
+// @import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import 'react-loading-skeleton/dist/skeleton.css';
+
+// Some temp fixes
+@import 'fixes';
+
+// If you want to add something do it here
+@import 'custom';
+@import './icon-font';
+@import './components/header';
+@import './components/button';
+@import './components/cards';
+@import './components/breadcrumb';
+@import './components/navbar';
+@import './components/input';
+@import './components/tooltip';
+@import './components/tabs';
+@import './components/table';
+@import './components/toast';
+@import './components/modal';
+@import './components/sidebar';
+@import './components/nav';
+@import './components/graphnode';
+@import './components/badge';
+@import './components/pagination';
+@import './components/accordion';
+@import './components/stepper';
+@import './components/jsonviewer';
+
+.c-app {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.c-wrapper {
+    flex: 1 1;
+    min-width: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    transition: margin 0.3s;
+}
+
+a,
+button {
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
+.accordion-header {
+    background-color: $primary-200;
+}
+
+.accordion-button {
+    background-color: $primary-200;
+    padding: 0 var(--cui-accordion-btn-padding-x);
+}
+
+.no-arrow-accordion {
+    .accordion-button::after {
+        display: none;
+    }
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.popover .arrow:after,
+.popover .arrow:before {
+    position: absolute;
+    display: block;
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+}
+.bs-popover-bottom > .arrow:after {
+    top: 1px;
+    border-width: 0 0.5rem 0.5rem;
+    border-bottom-color: #fff !important;
+}
+
+.bs-popover-auto[x-placement^='bottom'] > .arrow:before,
+.bs-popover-bottom > .arrow:before {
+    top: 0;
+    border-width: 0 0.5rem 0.5rem;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+.bs-popover-auto[x-placement^='bottom'] > .arrow,
+.bs-popover-bottom > .arrow {
+    top: calc(-0.5rem - 1px);
+}
+.arrow {
+    transform: translate(8rem, 0px) !important;
+}
+.auth-contianer {
+    background: $auth-color !important;
+}
+.login-left {
+    width: 50vw;
+    height: 75vh;
+    border-radius: 16vh;
+    background-color: $primary-500;
+    transform: rotate(-45deg);
+    position: fixed;
+    left: -30vh;
+    top: -8vw;
+    z-index: 0;
+}
+.login-right {
+    width: 50vw;
+    height: 75vh;
+    border-radius: 16vh;
+    background-color: $primary-500;
+    transform: rotate(-45deg);
+    position: fixed;
+    left: 150vh;
+    bottom: -10vw;
+}
+.logo {
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    z-index: 1;
+}
+.invalid {
+    color: $red;
+}
+.grecaptcha-badge {
+    visibility: hidden;
+}
+.bottom-fixed-bar {
+    position: fixed;
+    width: 100%;
+    background-color: $secondary-300;
+    border-radius: 2px 2px 0 0;
+    border: 1px solid $neutral-700;
+    z-index: 9999;
+    bottom: 0;
+}
+
+.header {
+    padding: 0;
+    border-bottom: none !important;
+}
+
+.fixed-header-height {
+    height: 85px;
+}
+
+.fixed-header-padding {
+    padding-top: 85px;
+}
+
+.dot {
+    border: 1.5px solid $neutral-800;
+    background: $primary-400;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 12px;
+    margin-bottom: 20px;
+    top: 5px;
+    right: 12px;
+    height: 8px;
+    width: 8px;
+}
+
+.neutral-700 {
+    background-color: $neutral-700;
+}
+.s-eql-3 {
+    width: 33.3% !important;
+}
+.s-eql-2 {
+    width: 50% !important;
+}
+.s-eql-4 {
+    width: 25% !important;
+}
+.cloud-card-status {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+.card-dial {
+    width: 70px;
+}
+// invite user popup
+.invite-user-pop-up input[type='checkbox'] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.invite-user-pop-up .checkbox {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background: #fff;
+    border: 2px #ddd solid;
+    margin-right: 4px;
+}
+
+.invite-user-pop-up .checkbox--active {
+    border-color: #51b5e2;
+    background: #51b5e2;
+}
+.action-drop ul.dropdown-menu {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 14px;
+}
+.schema-table .accordion-button:not(.collapsed),
+.schema-table .accordion-body {
+    padding-top: 0;
+    background-color: #e6eff1;
+}
+.schema-table .accordion-flush .accordion-item {
+    border: 0;
+}
+.schema-table .accordian-items {
+    font-size: 14px;
+}
+.left-side-bar .accordion-button:after {
+    display: none;
+}
+.search-right-sec {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+}
+.plus-minus {
+    background: #686767;
+    border-radius: 50%;
+    padding: 0px 3px;
+    color: #fff;
+    z-index: 0;
+}
+.chart-speedometer-wrapper {
+    right: -5px;
+    position: relative;
+}
+.top--15 {
+    top: -15px;
+}
+.top--7 {
+    top: -7px;
+}
+.custom-modal .modal-dialog {
+    min-width: 850px !important;
+}
+.pl-2p {
+    padding-left: 3px !important;
+}
+.px--12p button {
+    padding: 0 12px !important;
+}
+.setting-table td {
+    height: 55px;
+    vertical-align: middle;
+}
+.react-flow__attribution.right {
+    display: none;
+}
+.mulinode-card {
+    box-shadow: 10px -10px 0 -2px #ffffff, 10px -10px #619ea5, 15px -15px 0 -2px #ffffff, 15px -15px #619ea5,
+        20px -20px 0 -2px #ffffff, 20px -20px #619ea5;
+}
+pre[class*='language-'],
+code[class*='language-'] {
+    white-space: normal;
+}

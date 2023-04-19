@@ -1,0 +1,137 @@
+.custom-table {
+    @include border-radius(8px);
+    .thead {
+        &.border-bottom {
+            border-bottom: 1px solid $secondary-500;
+        }
+    }
+    &.table-borderless {
+        background: $white;
+        border: 1px solid rgba($original-black, 0.03);
+        box-sizing: border-box;
+        box-shadow: $shadow-8;
+        cursor: default;
+        thead th {
+            border: none;
+            vertical-align: top;
+            background-color: $primary-200;
+            @extend .font-small-semibold;
+        }
+        tbody td {
+            color: $text-table;
+            @extend .font-small;
+            border: none;
+            border-top: 1px solid;
+            border-top-color: rgba($color: $neutral, $alpha: 0.1);
+            padding: 1rem 1rem;
+            :first {
+                border-top: none;
+            }
+        }
+    }
+    .no-pointer {
+        cursor: default;
+    }
+    &.table-hover {
+        cursor: pointer;
+        tbody {
+            tr:hover {
+                background-color: $secondary-100;
+            }
+        }
+    }
+    &.identities-table {
+        table-layout: fixed;
+
+        thead th {
+            border-bottom: 0px;
+            vertical-align: text-bottom;
+            vertical-align: top;
+            background-color: $primary-200;
+        }
+        &.identities-permission {
+            tr td:nth-child(2),
+            tr td:nth-child(3),
+            tr th:nth-child(2),
+            tr th:nth-child(3) {
+                background-color: $bg-table-col;
+            }
+        }
+        &.identities-access-types {
+            tr td:nth-child(2),
+            tr th:nth-child(2) {
+                background-color: $bg-table-col;
+            }
+        }
+    }
+
+    // single identity insight table
+    &.insight-table {
+        table-layout: fixed;
+        border-collapse: collapse;
+        thead th,
+        tbody td {
+            color: $neutral;
+            text-align: center;
+            padding: 0.75rem 2rem;
+            border: 1px solid rgba($color: $neutral, $alpha: 0.1);
+            @extend .h6;
+        }
+        .icon-success {
+            color: $success;
+        }
+        .icon-danger {
+            color: $danger-dark;
+        }
+        .icon-warning {
+            color: $warning-100;
+        }
+    }
+    &.info-table {
+        box-shadow: $shadow-8;
+        table-layout: fixed;
+        border-collapse: collapse;
+        thead th {
+            @extend .font-small-semibold;
+            border: 1px solid rgba($color: $original-black, $alpha: 0.03);
+        }
+        tbody td {
+            color: $text-table;
+            @extend .font-small;
+            border: 1px solid rgba($color: $original-black, $alpha: 0.03);
+            &.title {
+                @extend .font-small-semibold;
+            }
+        }
+    }
+
+    &.details-table {
+        th,
+        td {
+            padding-left: 1.5rem;
+            border-color: rgba($color: $neutral, $alpha: 0.1);
+        }
+        th {
+            @extend .font-small-semibold;
+            border-top: none;
+        }
+        td {
+            @extend .font-small;
+        }
+    }
+    &.fixed-layout {
+        table-layout: fixed;
+    }
+    .border-left {
+        border-left: 2px solid $neutral;
+    }
+}
+
+.first-col {
+    max-width: 19rem;
+    text-align: left;
+}
+.risk-table-heigth {
+    height: 320px !important;
+    overflow-y: scroll;
+}

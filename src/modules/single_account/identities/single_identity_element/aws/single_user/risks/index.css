@@ -1,0 +1,26 @@
+.rowC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.rowC .legend {
+    /* width: 100px; */
+    margin: 10px;
+    text-align: left;
+    align-items: center;
+
+    justify-content: center;
+}
+.rowC .legend .legendRow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+.rowC .legend span {
+    padding-left: 10px;
+    /* display: block; */
+}

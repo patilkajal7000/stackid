@@ -1,0 +1,35 @@
+// Here you can add other styles
+.app-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.full-access path {
+    stroke: red !important;
+}
+.read-access path {
+    stroke: green !important;
+}
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 13%;
+}
+
+.layer1 {
+    background-color: #e553532b;
+    top: 45%;
+}
+.layer2 {
+    top: 62%;
+    background-color: honeydew;
+}
+//dropdown
+.graphdropdown {
+    background-color: #e5e4e2 !important;
+    margin: 3px;
+}
+.react-flow__attribution.right {
+    right: 0;
+    display: none;
+}

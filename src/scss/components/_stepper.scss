@@ -1,0 +1,22 @@
+.custom-stepper {
+    .MuiStepLabel-root {
+        width: 100%;
+    }
+    .MuiStepIcon-root.MuiStepIcon-active {
+        color: $primary;
+    }
+    .MuiStepIcon-root.MuiStepIcon-completed {
+        color: $grey;
+    }
+    .MuiStepLabel-label {
+        @extend .font-small-semibold;
+        color: $grey;
+    }
+    .MuiStepLabel-label.MuiStepLabel-active {
+        @extend .font-small-semibold;
+        color: $primary;
+    }
+    .MuiStepLabel-label.MuiStepLabel-completed {
+        @extend .MuiStepLabel-label;
+    }
+}
